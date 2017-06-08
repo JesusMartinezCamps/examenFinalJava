@@ -34,7 +34,7 @@ public class TestMrMeeseeks {
 		
 		
 		setMrMe.add(mrMee);
-		setMrMe.remove(0);
+		
 		
 		assertEquals(setMrMe.size(), 0);
 	}

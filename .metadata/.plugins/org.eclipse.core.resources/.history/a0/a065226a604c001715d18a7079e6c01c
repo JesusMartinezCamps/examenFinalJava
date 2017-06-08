@@ -11,32 +11,29 @@ import org.junit.Test;
 public class TestMrMeeseeks {
 
 	@Test
-	public void testGuardarMrMeeseeks() {
-		
-		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
-		
+	public void testGenerateMrMeeseeks() {
+
 		MrMeeseeks mrMee = new MrMeeseeks();
+
+		String first = "Open ";
+		String second = "stupid jar";
 		
 		
-		setMrMe.add(mrMee);
-		
-		
-		assertEquals(setMrMe.size(), 1);
+		mrMee.formulateRequest(first, second);
 	}
-
-
+	
 	@Test
-	public void testEliminarMrMeeseeks() {
-		
-		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
-		
+	public void testGuardarMrMeeseeks() {
+	
 		MrMeeseeks mrMee = new MrMeeseeks();
 		
+
+		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
 		
 		setMrMe.add(mrMee);
-		setMrMe.remove(0);
 		
 		assertEquals(setMrMe.size(), 0);
 	}
-	
+
+
 }
