@@ -11,7 +11,7 @@ public class MrMeeseeks implements Doable{
 	private static AtomicInteger RESPONDE_GENERATOS = new AtomicInteger(0);
 	private Integer id;
 	private ArrayList<String> messageOnRequest = new ArrayList<String>(3);
-	private String messageOnDone = "All done!";
+	private String messageOnDone = ""All done!"";
 	private String messageOnExplode = "";
 	
 	/*Constructor*/
@@ -37,9 +37,6 @@ public class MrMeeseeks implements Doable{
 		
 		String response = doRequest(first, second);
 		System.out.println(response);
-		
-		System.out.print(messageOnDone + "\n");
-		
 		
 		
 	}

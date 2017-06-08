@@ -10,9 +10,9 @@ public class MrMeeseeks implements Doable{
 	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
 	private static AtomicInteger RESPONDE_GENERATOS = new AtomicInteger(0);
 	private Integer id;
-	private ArrayList<String> messageOnRequest = new ArrayList<String>(3);
-	private String messageOnDone = "All done!";
-	private String messageOnExplode = "";
+	private ArrayList<String> messageOnRequest;
+	private String messageOnDone = "";
+	private String messageOnExplode = "All done!";
 	
 	/*Constructor*/
 	public MrMeeseeks(){
@@ -37,9 +37,6 @@ public class MrMeeseeks implements Doable{
 		
 		String response = doRequest(first, second);
 		System.out.println(response);
-		
-		System.out.print(messageOnDone + "\n");
-		
 		
 		
 	}
@@ -72,10 +69,4 @@ public class MrMeeseeks implements Doable{
 		
 		return response;
 	}
-
-	public Object doRequest(Object first, Object second) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

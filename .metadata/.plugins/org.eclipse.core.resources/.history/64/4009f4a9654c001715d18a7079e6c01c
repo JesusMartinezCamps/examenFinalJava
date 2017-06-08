@@ -11,8 +11,8 @@ public class MrMeeseeks implements Doable{
 	private static AtomicInteger RESPONDE_GENERATOS = new AtomicInteger(0);
 	private Integer id;
 	private ArrayList<String> messageOnRequest = new ArrayList<String>(3);
-	private String messageOnDone = "All done!";
-	private String messageOnExplode = "";
+	private String messageOnDone = "";
+	private String messageOnExplode = "All done!";
 	
 	/*Constructor*/
 	public MrMeeseeks(){
@@ -37,9 +37,6 @@ public class MrMeeseeks implements Doable{
 		
 		String response = doRequest(first, second);
 		System.out.println(response);
-		
-		System.out.print(messageOnDone + "\n");
-		
 		
 		
 	}
@@ -73,9 +70,10 @@ public class MrMeeseeks implements Doable{
 		return response;
 	}
 
+	@Override
 	public Object doRequest(Object first, Object second) {
-		// TODO Auto-generated method stub
-		return null;
+		String response = first + second;
+		
+		return response;
 	}
-
 }
