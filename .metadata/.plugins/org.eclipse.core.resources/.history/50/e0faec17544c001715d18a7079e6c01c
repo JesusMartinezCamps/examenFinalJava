@@ -1,0 +1,16 @@
+package org.foobarspam.examenFinal.business;
+
+import java.util.ArrayList;
+
+public class ProxyMrMeeseeks {
+
+	/*Propiedades*/
+	private ArrayList<MrMeeseeks> box;
+	
+	/*Constructor*/
+	public ProxyMrMeeseeks(){
+		
+	}
+	
+	/*Getters y Setters*/
+}

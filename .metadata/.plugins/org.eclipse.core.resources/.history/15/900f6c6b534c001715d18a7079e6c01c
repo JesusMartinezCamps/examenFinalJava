@@ -1,0 +1,14 @@
+package org.foobarspam.examenFinal.business;
+
+public class ProxyMrMeeseeks {
+
+	/*Propiedades*/
+	private ArrayList<MrMeeseeks> box;
+	
+	/*Constructor*/
+	public ProxyMrMeeseeks(){
+		
+	}
+	
+	/*Getters y Setters*/
+}

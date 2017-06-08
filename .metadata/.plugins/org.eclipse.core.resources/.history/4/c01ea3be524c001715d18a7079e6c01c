@@ -1,0 +1,48 @@
+package org.foobarspam.examenFinal.business;
+import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.foobarspam.examenFinal.interfaces.Doable;
+
+public class MrMeeseeks implements Doable{
+
+	/*Propiedades*/
+	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
+	private Integer id;
+	private ArrayList<String> messageOnRequest;
+	private String messageOnDone = "";
+	private String messageOnExplode = "";
+	
+	/*Constructor*/
+	public MrMeeseeks(){
+		this.id = ID_GENERATOR.incrementAndGet();
+	}
+
+	/*Getters y Setters*/
+	public Integer getId(){
+		return this.id;
+	}
+	
+	public void setId(Integer id){
+		this.id = id;
+	}
+	
+	
+	
+	/*Metodos*/
+	public <T, R> void doRequest(T R) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String generateMessageOnRequest(){
+		String message = "Oh, yeah! Yes, ma'am!";
+		return message;
+	}
+	/* 
+	 * elige al azar uno de los tres mensajes
+         * que lanza Mr Meeseeks cuando se le formula
+	 * la peticion:
+	 * "Oooh yeah! Can do!"; "Yes sireee!"; "Oh, yeah! Yes, ma'am!"
+         */	
+}

@@ -1,0 +1,32 @@
+package org.foobarspam.examenFinal.business;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.foobarspam.examenFinal.interfaces.Doable;
+
+public class MrMeeseeks implements Doable{
+
+	/*Propiedades*/
+	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
+	private Integer id;
+	private string messageOnRequest = "";
+	
+	/*Constructor*/
+	public MrMeeseeks(){
+		this.id = ID_GENERATOR.incrementAndGet();
+	}
+
+	/*Getters y Setters*/
+	
+	/*Metodos*/
+	public <T, R> void doRequest(T R) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/* generateMessageOnRequest()
+	 * elige al azar uno de los tres mensajes
+         * que lanza Mr Meeseeks cuando se le formula
+	 * la peticion:
+	 * "Oooh yeah! Can do!"; "Yes sireee!"; "Oh, yeah! Yes, ma'am!"
+         */	
+}
