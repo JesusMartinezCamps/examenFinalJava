@@ -30,14 +30,6 @@ public class ProxyMrMeeseeks {
 		MrMee = new MrMeeseeks();
 		setMrMee.add(MrMee);
 		
-		saludoMeeseeks(MrMee);
-		
-	}
-	
-	private void saludoMeeseeks(MrMeeseeks mrMee){
-		String message = "I'm Mr Meeseeks " + mrMee.getId() + ". Look at meeee!";
-		
-		System.out.println(message);
 	}
 	
 	

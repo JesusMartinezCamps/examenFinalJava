@@ -30,7 +30,7 @@ public class ProxyMrMeeseeks {
 		MrMee = new MrMeeseeks();
 		setMrMee.add(MrMee);
 		
-		saludoMeeseeks(MrMee);
+		saludoMeeseeks(mrMee);
 		
 	}
 	
