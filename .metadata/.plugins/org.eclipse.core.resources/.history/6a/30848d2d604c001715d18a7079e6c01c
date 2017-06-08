@@ -12,7 +12,10 @@ public class TestMrMeeseeks {
 
 	@Test
 	public void testGenerateMrMeeseeks() {
+		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
 
+		ProxyMrMeeseeks box = new ProxyMrMeeseeks();
+		
 		MrMeeseeks mrMee = new MrMeeseeks();
 
 		String first = "Open ";
@@ -20,19 +23,6 @@ public class TestMrMeeseeks {
 		
 		
 		mrMee.formulateRequest(first, second);
-	}
-	
-	@Test
-	public void testGuardarMrMeeseeks() {
-	
-		MrMeeseeks mrMee = new MrMeeseeks();
-		
-
-		ArrayList<MrMeeseeks> setMrMe = new ArrayList<MrMeeseeks>();
-		
-		setMrMe.add(mrMee);
-		
-		assertEquals(setMrMe.size(), 0);
 	}
 
 

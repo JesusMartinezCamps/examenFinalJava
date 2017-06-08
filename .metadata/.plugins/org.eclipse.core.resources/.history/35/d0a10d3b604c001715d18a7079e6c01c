@@ -13,6 +13,7 @@ public class TestMrMeeseeks {
 	@Test
 	public void testGenerateMrMeeseeks() {
 
+		
 		MrMeeseeks mrMee = new MrMeeseeks();
 
 		String first = "Open ";
