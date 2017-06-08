@@ -37,4 +37,13 @@ public class TestMrMeeseeks {
 		assertEquals(setMrMe.size(), 0);
 	}
 	
+	@Test
+	public void testformulateRequest() {
+		String first = "Hi";
+		String second  ="ow are you";
+		
+		String resultado = formulateRequest(first, second);
+
+		assertEquals(resultado, "Hi How are you")
+	}
 }

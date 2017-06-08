@@ -17,7 +17,9 @@ public class TestMrMeeseeks {
 		
 		MrMeeseeks mrMee = new MrMeeseeks();
 		
+		
 		setMrMe.add(mrMee);
+		
 		
 		assertEquals(setMrMe.size(), 1);
 	}

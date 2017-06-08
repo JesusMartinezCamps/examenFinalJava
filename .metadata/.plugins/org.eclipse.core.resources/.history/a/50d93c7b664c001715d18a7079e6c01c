@@ -37,4 +37,11 @@ public class TestMrMeeseeks {
 		assertEquals(setMrMe.size(), 0);
 	}
 	
+	@Test
+	public void testEliminarMrMeeseeks() {
+	
+		String response = first + second;
+		
+		return response;
+	}
 }
