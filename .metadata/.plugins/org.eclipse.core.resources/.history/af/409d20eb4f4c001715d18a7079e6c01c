@@ -1,0 +1,5 @@
+package org.foobarspam.examenFinal.interfaces;
+
+public interface DoSomethingSimple {
+
+}

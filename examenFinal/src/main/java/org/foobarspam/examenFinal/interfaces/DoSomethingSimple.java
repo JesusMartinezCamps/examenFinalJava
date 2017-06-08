@@ -1,0 +1,6 @@
+package org.foobarspam.examenFinal.interfaces;
+
+public interface DoSomethingSimple {
+
+	public <T, R> void doRequest();
+}
