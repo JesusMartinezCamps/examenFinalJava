@@ -8,7 +8,7 @@ public class MrMeeseeks implements Doable{
 
 	/*Propiedades*/
 	private static AtomicInteger ID_GENERATOR = new AtomicInteger(1000);
-	private static AtomicInteger RESPONDE_GENERATOS = new AtomicInteger(0);
+	private static AtomicInteger RESPONDE_GENERATOS = new AtomicInteger(3);
 	private Integer id;
 	private ArrayList<String> messageOnRequest;
 	private String messageOnDone = "";
@@ -31,12 +31,7 @@ public class MrMeeseeks implements Doable{
 	
 	/*Metodos*/
 	public void formulateRequest(String first, String second){
-		
-		String messageGenerated = generateMessageOnRequest();
-		System.out.println(messageGenerated);
-		
-		String response = doRequest(first, second);
-		System.out.println(response);
+		String message = doRequest(first, second);
 		
 		
 	}
@@ -52,19 +47,18 @@ public class MrMeeseeks implements Doable{
 	public String generateMessageOnRequest(){
 		
 		ArrayList<String> mrMeeseeksLanguage = new ArrayList<String>(3);
-		mrMeeseeksLanguage.add("Oh, yeah! Yes, ma'am!");
 		mrMeeseeksLanguage.add("Oooh yeah! Can do!");
 		mrMeeseeksLanguage.add("Yes sireee!");
+		mrMeeseeksLanguage.add("Oh, yeah! Yes, ma'am!");
 		
 		Integer position = RESPONDE_GENERATOS.incrementAndGet();
 		
+		String response = mrMeeseeksLanguage.get(position);
 		
-		String messageGenerated = mrMeeseeksLanguage.get(position -1);
-		
-		return messageGenerated;
+		return response;
 	}
 
-	public String doRequest(String first, String second) {
+	public String doRequest(String accion, String objeto) {
 
 		String response = first + second;
 		
