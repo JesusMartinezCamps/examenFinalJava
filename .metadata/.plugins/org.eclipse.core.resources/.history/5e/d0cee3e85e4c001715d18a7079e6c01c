@@ -61,10 +61,10 @@ public class App{
 		/* listMrMeeseeks(setMrMe)
 		 * Lista los ids de todos los Mr Meeseeks creados */
 		 
-	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
+	public void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
 		
 		for(MrMeeseeks everyMrMee : setMrMe){
-			System.out.println(everyMrMee.getId());
+			everyMrMee.getId();
 		}		
 	}
 		/* explodeMrMeeseeks(setMrMe, id)

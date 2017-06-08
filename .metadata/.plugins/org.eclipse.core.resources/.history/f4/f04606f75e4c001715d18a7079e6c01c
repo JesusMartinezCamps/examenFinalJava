@@ -64,7 +64,7 @@ public class App{
 	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
 		
 		for(MrMeeseeks everyMrMee : setMrMe){
-			System.out.println(everyMrMee.getId());
+			everyMrMee.getId();
 		}		
 	}
 		/* explodeMrMeeseeks(setMrMe, id)
