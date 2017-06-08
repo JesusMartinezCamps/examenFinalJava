@@ -40,11 +40,11 @@ public class App{
 		System.out.println();
 		
 		collectIds(setMrMe, ids);
-		
+		/*
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
-		}
+		}*/
 	}
 		/* collectIds(setMrMe, ids)
 		 * Almacena en un array los ids de los Mr Meeseeks creados

@@ -49,7 +49,7 @@ public class App{
 		/* collectIds(setMrMe, ids)
 		 * Almacena en un array los ids de los Mr Meeseeks creados
 		 */
-	public static void collectIds(ArrayList<MrMeeseeks> setMrMe, ArrayList<Integer> ids){
+	public void collectionIds(ArrayList<MrMeeseeks> setMrMe, ArrayList<Integer> ids){
 		for(MrMeeseeks everyMrMee : setMrMe){
 			Integer id = everyMrMee.getId();
 			ids.add(id);

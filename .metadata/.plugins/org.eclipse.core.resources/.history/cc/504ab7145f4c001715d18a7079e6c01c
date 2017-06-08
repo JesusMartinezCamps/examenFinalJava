@@ -38,18 +38,20 @@ public class App{
 		System.out.println("Estos son los Mr Meeseeks creados:");
 		listMrMeeseeks(setMrMe);
 		System.out.println();
-		
+		/**
 		collectIds(setMrMe, ids);
 		
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
 			explodeMrMeeseeks(setMrMe, id);   
+			
 		}
+		*/
 	}
 		/* collectIds(setMrMe, ids)
 		 * Almacena en un array los ids de los Mr Meeseeks creados
 		 */
-	public static void collectIds(ArrayList<MrMeeseeks> setMrMe, ArrayList<Integer> ids){
+	public void collectionIds(ArrayList<MrMeeseeks> setMrMe, ArrayList<Integer> ids){
 		for(MrMeeseeks everyMrMee : setMrMe){
 			Integer id = everyMrMee.getId();
 			ids.add(id);
@@ -58,6 +60,7 @@ public class App{
 
 		/* listMrMeeseeks(setMrMe)
 		 * Lista los ids de todos los Mr Meeseeks creados */
+		 
 	public static void listMrMeeseeks(ArrayList<MrMeeseeks> setMrMe){
 		
 		for(MrMeeseeks everyMrMee : setMrMe){
