@@ -43,7 +43,7 @@ public class App{
 		
 		System.out.println("Adios, Mr Meeseeks...");
 		for(Integer id : ids){
-			explodeMrMeeseeks(setMrMe, id);
+			explodeMrMeeseeks(setMrMe, id);   
 		}
 	}
 		/* collectIds(setMrMe, ids)
@@ -69,19 +69,11 @@ public class App{
 		 */	
 	public static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMee, Integer id){
 		for(MrMeeseeks everyMrMee : setMrMee){
+			String message = "Poooof" + everyMrMee.getId();
+			System.out.println(message);
 			
-			if(everyMrMee.getId() == id){
-				String message = "Poooof " + everyMrMee.getId();
-				
-				System.out.println(message);
-				
-				setMrMee.remove(everyMrMee.getId());
-			}
-			
-
+			setMrMee.remove(everyMrMee);
 		}
-		
-		
 	}
 	
 }

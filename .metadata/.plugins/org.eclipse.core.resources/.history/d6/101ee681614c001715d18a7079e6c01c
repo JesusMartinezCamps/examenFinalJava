@@ -67,18 +67,14 @@ public class App{
 		/* explodeMrMeeseeks(setMrMe, id)
 		 * elimna del conjunto de Mr Meeseeks creados el que ya ha completado su cometido
 		 */	
-	public static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMee, Integer id){
+	public static void explodeMrMeeseeks(ArrayList<MrMeeseeks> setMrMee, ArrayList<Integer> ids){
 		for(MrMeeseeks everyMrMee : setMrMee){
 			
-			if(everyMrMee.getId() == id){
-				String message = "Poooof " + everyMrMee.getId();
-				
-				System.out.println(message);
-				
-				setMrMee.remove(everyMrMee.getId());
-			}
+			String message = "Poooof " + everyMrMee.getId();
 			
-
+			System.out.println(message);
+			
+			setMrMee.remove(everyMrMee.getId());
 		}
 		
 		
