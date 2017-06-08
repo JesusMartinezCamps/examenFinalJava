@@ -28,22 +28,12 @@ public class MrMeeseeks implements Doable{
 	}
 	
 	
-	
 	/*Metodos*/
-	public <T, R> void doRequest(T R) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
 	public void formulateRequest(String first, String second){
-		String firstMessage = first;
-		String secondMessage = second;
 		
-		System.out.println(firstMessage + secondMessage);
+		System.out.println(first + second);
 		
 	}
-	
 	
 	public void sayMessageOnCreate(){
 		System.out.print("I'm Mr Meeseeks! Look  at me!");
@@ -55,10 +45,15 @@ public class MrMeeseeks implements Doable{
 	
 	public String generateMessageOnRequest(){
 		
-		
 		String message = "Oh, yeah! Yes, ma'am!";
 		return message;
 	}
+
+	public Object doRequest(Object accion, Object objeto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	/*
 	 *  elige al azar uno de los tres mensajes
          * que lanza Mr Meeseeks cuando se le formula

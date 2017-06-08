@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 public class ProxyMrMeeseeks {
 
-	/*Propiedades*/
-	private ArrayList<MrMeeseeks> listaMrMee;
 	private MrMeeseeks MrMee ;
-	
+	//private ArrayList<MrMeeseeks> setMrMee;
 	
 	
 	/*Constructor*/
@@ -17,11 +15,20 @@ public class ProxyMrMeeseeks {
 	
 	/*Getters y Setters*/
 	public MrMeeseeks getMrMe(){
-		return MrMee;
+		
+		return this.MrMee;
 	}
 	
+	
 	/*Metodos*/
-	public void pushButton(ArrayList<MrMeeseeks> lista){
+	public void pushButton(ArrayList<MrMeeseeks> setMrMee){
+		createMrMeeseeks(setMrMee);
+				
+	}
+
+	private void createMrMeeseeks(ArrayList<MrMeeseeks> setMrMee) {
+		MrMee = new MrMeeseeks();
+		setMrMee.add(MrMee);
 		
 	}
 	

@@ -1,0 +1,10 @@
+package org.foobarspam.examenFinal.interfaces;
+
+public interface doSomethingSimple<T, R> {
+
+	public T doRequest(T accion, R objeto);;
+}
+
+
+	
+	

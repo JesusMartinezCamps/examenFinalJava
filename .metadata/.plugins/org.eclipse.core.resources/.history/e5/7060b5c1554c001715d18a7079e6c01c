@@ -1,0 +1,15 @@
+package org.foobarspam.examenFinal.test;
+
+import static org.junit.Assert.*;
+
+import org.foobarspam.examenFinal.business.MrMeeseeks;
+import org.junit.Test;
+
+public class TestMrMeeseeks {
+
+	@Test
+	public void testConstructorMrMeeseeks() {
+		MrMeeseeks mrMee = new Meeseeks();
+	}
+
+}

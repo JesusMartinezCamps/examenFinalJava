@@ -1,0 +1,21 @@
+package org.foobarspam.examenFinal.test;
+
+import static org.junit.Assert.*;
+
+import org.foobarspam.examenFinal.business.MrMeeseeks;
+import org.junit.Test;
+
+public class TestMrMeeseeks {
+
+	@Test
+	public void testGenerateMrMeeseeks() {
+		MrMeeseeks mrMee = new MrMeeseeks();
+
+		String first = "Open";
+		String second = "stupid jar";
+		mrMee.formulateRequest(first, second);
+
+		assertEquals()
+	}
+
+}
